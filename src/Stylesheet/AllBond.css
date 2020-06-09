@@ -1,0 +1,34 @@
+.all-bond,
+.add-bond {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.8rem 0;
+}
+.add-bond {
+  font-size: 1.2rem;
+  margin-left: 41rem;
+  text-decoration: none;
+}
+.add-bond:hover {
+  color: lightcoral;
+}
+.table {
+  align-items: center;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+.column-heading {
+  height: 1.6rem;
+  font-size: 1.4rem;
+  padding: 0.4rem 1.4rem;
+  border-bottom: 2px solid darkgray;
+}
+.column-items {
+  padding: 0.5rem 0.2rem;
+}
+.loading {
+  font-size: 6rem;
+  font-weight: 100;
+  margin-top: 14rem;
+  margin-left: 2rem;
+}
