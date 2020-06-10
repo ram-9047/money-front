@@ -57,7 +57,7 @@ class AllData extends Component {
     ) : (
       <div className="loading">
         <div className="loading-text">
-          <p>Loading...</p>
+          <p>Loading</p>
         </div>
         <div class="loader">Loading...</div>
       </div>
