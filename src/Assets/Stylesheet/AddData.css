@@ -4,6 +4,8 @@
   font-weight: 300;
   padding: 1.2rem 0;
   text-align: center;
+  margin-top: 4rem;
+  font-family: "Cormorant Garamond", serif;
 }
 .form-data {
   display: flex;
@@ -25,23 +27,27 @@ input {
 .back-btn {
   font-size: 1.4rem;
   height: 1.9rem;
-  background: none;
+  background: coral;
   border: 1px solid coral;
+  border-radius: 15px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
 }
 .back-btn {
   width: 30rem;
   margin-left: 30rem;
   margin-top: 0.5rem;
   outline: none;
-  border: 1px solid cyan;
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
 }
 .submit-btn:hover {
-  background-color: coral;
+  background-color: transparent;
+  color: coral;
   border: 1px solid coral;
-  border-radius: 5px;
 }
 .back-btn:hover {
-  background-color: cyan;
-  /* border: 1px solid cyan; */
-  border-radius: 5px;
+  color: blue;
+  background-color: transparent;
 }
