@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import "../Assets/Stylesheet/AllBond.css";
-import loader from "../Assets/Images/loader.svg";
 
 class AllData extends Component {
   constructor() {
@@ -60,9 +59,6 @@ class AllData extends Component {
         <div className="loading-text">
           <p>Loading...</p>
         </div>
-        {/* <div className="loading-svg">
-          <img src={loader} alt="loader" />
-        </div> */}
         <div class="loader">Loading...</div>
       </div>
     );
