@@ -16,7 +16,7 @@ class AddData extends Component {
       rating: "",
       security: "",
       yield: "",
-
+      submit: false,
       categoryData: [
         "capital",
         "corporate",
@@ -54,6 +54,10 @@ class AddData extends Component {
       )
       .then((res) => history.push("/"))
       .catch((error) => console.log(error));
+  };
+
+  handleOnClick = () => {
+    this.setState({ submit: true });
   };
 
   render() {
@@ -135,8 +139,12 @@ class AddData extends Component {
               onChange={this.handleChange}
               className="input-box"
             />
-            <button onSubmit={this.handleOnSubmit} className="submit-btn">
-              Submit
+            <button
+              onSubmit={this.handleOnSubmit}
+              onClick={this.handleOnClick}
+              className="submit-btn"
+            >
+              {this.state.submit ? "Submiting......" : "Submit"}
             </button>
           </form>
           <Link to="/">
