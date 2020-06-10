@@ -1,0 +1,50 @@
+.all-bond {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0.8rem 0;
+}
+.all-bond h1 {
+  margin-top: 0.4rem;
+}
+.add-bond {
+  font-size: 1.2rem;
+  border: 1px solid blue;
+  background-color: blue;
+  color: white;
+  border-radius: 0.8rem;
+  text-decoration: none;
+}
+.add-bond:hover {
+  color: blue;
+  background-color: transparent;
+}
+.table {
+  align-items: center;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+.column-heading {
+  height: 1.6rem;
+  font-size: 1.4rem;
+  padding: 0.4rem 1.4rem;
+  border: 2.5px solid gray;
+}
+.column-items {
+  border: 2px solid tomato;
+  padding: 0.5rem 0.2rem;
+}
+
+.loading {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10rem;
+  margin-left: 18rem;
+}
+.loading-text {
+  font-size: 5.5rem;
+  font-weight: 100;
+  margin-top: 5rem;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-import "../Stylesheet/AddData.css";
+import "../Assets/Stylesheet/AddData.css";
 import { Link } from "react-router-dom";
 
 class AddData extends Component {

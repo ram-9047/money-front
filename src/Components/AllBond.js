@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import "../Stylesheet/AllBond.css";
+import "../Assets/Stylesheet/AllBond.css";
+import loader from "../Assets/Images/loader.svg";
 
 class AllData extends Component {
   constructor() {
@@ -23,10 +24,10 @@ class AllData extends Component {
   render() {
     return this.state.data.length ? (
       <div>
-        <div>
-          <h1 className="all-bond">All Bond</h1>
-          <Link to="/add" className="add-bond">
-            Add New Bond
+        <div className="all-bond">
+          <h1>All Bond</h1>
+          <Link to="/add">
+            <button className="add-bond">Add New Bond</button>
           </Link>
         </div>
         <table className="table">
@@ -55,7 +56,14 @@ class AllData extends Component {
         </table>
       </div>
     ) : (
-      <div className="loading">Loading...</div>
+      <div className="loading">
+        <div className="loading-text">
+          <p>Loading...</p>
+        </div>
+        <div>
+          <img src={loader} alt="loader" />
+        </div>
+      </div>
     );
   }
 }
