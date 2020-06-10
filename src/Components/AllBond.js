@@ -42,7 +42,7 @@ class AllData extends Component {
             <th className="column-heading">Yield</th>
           </tr>
           {this.state.data.map((singleData) => (
-            <tr>
+            <tr className="table-row">
               <th className="column-items">{singleData.name}</th>
               <th className="column-items">{singleData.category}</th>
               <th className="column-items">{singleData.coupon}</th>

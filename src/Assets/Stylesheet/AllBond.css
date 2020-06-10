@@ -21,6 +21,7 @@
   font-family: "Quicksand", sans-serif;
   outline: none;
   cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 .add-bond:hover {
   color: blue;
@@ -32,15 +33,29 @@
   margin-top: 0.5rem;
   font-family: "Quicksand", sans-serif;
 }
+
 .column-heading {
   height: 1.6rem;
   font-size: 1.4rem;
   padding: 0.4rem 1.4rem;
-  border: 2.5px solid gray;
+  border: 2.5px solid tomato;
+  background-color: tomato;
+  border-bottom: none;
+  color: white;
+  border-radius: 5px;
 }
+
 .column-items {
   border: 2px solid tomato;
   padding: 0.5rem 0.2rem;
+}
+.table-row {
+  background-color: transparent;
+  transition: background-color 0.8s ease;
+}
+.table-row:hover {
+  background-color: tomato;
+  color: white;
 }
 
 .loading {
