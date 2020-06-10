@@ -60,9 +60,10 @@ class AllData extends Component {
         <div className="loading-text">
           <p>Loading...</p>
         </div>
-        <div>
+        {/* <div className="loading-svg">
           <img src={loader} alt="loader" />
-        </div>
+        </div> */}
+        <div class="loader">Loading...</div>
       </div>
     );
   }
