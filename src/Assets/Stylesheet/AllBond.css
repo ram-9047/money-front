@@ -13,11 +13,14 @@
 .add-bond {
   font-size: 1.2rem;
   border: 1px solid blue;
+  padding: 0.5rem 0.8rem;
   background-color: blue;
   color: white;
-  border-radius: 0.8rem;
+  border-radius: 1.2rem;
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
+  outline: none;
+  cursor: pointer;
 }
 .add-bond:hover {
   color: blue;
