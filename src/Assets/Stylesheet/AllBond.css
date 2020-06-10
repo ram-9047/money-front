@@ -1,14 +1,32 @@
-.all-bond {
+.all-bond,
+.all-bond-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 2rem;
   text-align: center;
-  padding: 0.8rem 0;
+  margin: 0.5rem 2rem;
   font-family: "Cormorant Garamond", serif;
 }
 .all-bond h1 {
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
+}
+.view-all-bond {
+  background-color: transparent;
+  color: white;
+  border: 1px solid blue;
+  border-radius: 1.2rem;
+  outline: none;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  transition: background-color 0.5s ease;
+  padding: 0.3rem 1.2rem;
+}
+.view-all-bond:hover {
+  background-color: blue;
+  border: 1px solid blue;
 }
 .add-bond {
   font-size: 1.2rem;

@@ -24,10 +24,17 @@ class AllData extends Component {
     return this.state.data.length ? (
       <div>
         <div className="all-bond">
-          <h1>All Bond</h1>
-          <Link to="/add">
-            <button className="add-bond">Add New Bond</button>
-          </Link>
+          <div>
+            <h1>MoneyFront</h1>
+          </div>
+          <div className="all-bond-link">
+            <Link to="/">
+              <button className="view-all-bond">All Bond</button>
+            </Link>
+            <Link to="/add">
+              <button className="add-bond">Add New Bond</button>
+            </Link>
+          </div>
         </div>
         <table className="table">
           <tr>
