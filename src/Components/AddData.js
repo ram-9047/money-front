@@ -38,22 +38,23 @@ class AddData extends Component {
   handleOnSubmit = (event) => {
     const { history } = this.props;
     event.preventDefault();
-    axios
-      .post(
-        "https://cors-anywhere.herokuapp.com/https://moneyfront-bonds.herokuapp.com/api/bonds",
-        {
-          name: this.state.name,
-          category: this.state.category,
-          coupon: this.state.coupon,
-          ip: this.state.ip,
-          maturity: this.state.maturity,
-          rating: this.state.rating,
-          security: this.state.security,
-          yield: this.state.yield,
-        }
-      )
-      .then((res) => history.push("/"))
-      .catch((error) => console.log(error));
+    if (this.state.name)
+      axios
+        .post(
+          "https://cors-anywhere.herokuapp.com/https://moneyfront-bonds.herokuapp.com/api/bonds",
+          {
+            name: this.state.name,
+            category: this.state.category,
+            coupon: this.state.coupon,
+            ip: this.state.ip,
+            maturity: this.state.maturity,
+            rating: this.state.rating,
+            security: this.state.security,
+            yield: this.state.yield,
+          }
+        )
+        .then((res) => history.push("/"))
+        .catch((error) => console.log(error));
   };
 
   handleOnClick = () => {
